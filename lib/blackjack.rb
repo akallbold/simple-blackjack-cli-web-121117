@@ -53,8 +53,8 @@ end
 def runner
   welcome
   initial_round
-  card_total = card_total + initial_round.to_i
-  
+  card_total = card_total.to_i + initial_round.to_i
+
   if card_total<22
     hit?(card_total)
   else end_game
