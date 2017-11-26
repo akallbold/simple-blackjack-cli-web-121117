@@ -51,5 +51,12 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round
+
+  if card_total<22
+    hit?(card_total)
+  else end_game
+  end
+  
 end
